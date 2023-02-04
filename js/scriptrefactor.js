@@ -49,15 +49,14 @@ function displayAircraftData(data, browserLat, browserLon) {
             return;
         }
 
-        const aircraftLat = aircraft.lat * (Math.PI / 180);
-        const aircraftLon = aircraft.lon * (Math.PI / 180);
+        const aircraftLat = aircraft.lat;
+        const aircraftLon = aircraft.lon;
 
         //Calculate the direction based on the angle
         const direction = (180 + Math.atan2(aircraftLat - browserLat, aircraftLon - browserLon) * 180 / Math.PI) % 360;
-        const distance = 111.045 * Math.acos(
-        Math.sin(browserLat) * Math.sin(aircraftLat) +
-        Math.cos(browserLat) * Math.cos(aircraftLat) * Math.cos(aircraftLon - browserLon)
-        );
+        //Calculate the distance between the aircraft and the browser
+        const distance = Math.sqrt(Math.pow(aircraftLat - browserLat, 2) + Math.pow(aircraftLon - browserLon, 2)) * 69.172
+;
 
         result += `<div class='aircraft'>`
         if (aircraft.from) {
@@ -69,6 +68,8 @@ function displayAircraftData(data, browserLat, browserLon) {
         result += `<br>Altitude: ${aircraft.alt}
         <br>Call Sign: ${aircraft.call}
         <br>Type: ${aircraft.type}
+        <br>Latitude: ${aircraft.lat}
+        <br>Longitude: ${aircraft.lon}
         <br>Distance: ${distance.toFixed(2)} miles ${getDirection(direction)}
         <br><br>
     </div>`;
