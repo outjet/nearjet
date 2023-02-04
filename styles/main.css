@@ -1,9 +1,28 @@
+body {
+    background-color: lightslategray;
+}
+
 .aircraft {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+  border: 1px solid rgb(1, 108, 247);
+  border-radius: 10px;
   padding: 10px;
   margin-bottom: 10px;
   width: 250px;
   font-family: 'Open Sans', sans-serif;
+  background-color: ivory;
 }
+
+#result {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+#message {
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    color: gray;
+}
+
