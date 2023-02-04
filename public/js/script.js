@@ -1,3 +1,6 @@
+const fs = require("fs");
+const csvParse = require("csv-parse");
+
 function getAircraftData() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(handleGeolocationSuccess);
@@ -18,7 +21,7 @@ function handleGeolocationSuccess(position) {
     const cacheTimestamp = localStorage.getItem("timestamp");
 
     // Check if the cache is still valid (12 hours)
-    if (cache && cacheTimestamp && Date.now() - cacheTimestamp < 6333330) {
+    if (cache && cacheTimestamp && Date.now() - cacheTimestamp < 60) {
         const data = JSON.parse(cache);
         console.log('Data: ', data);
         console.log('Result: ', result);
@@ -30,7 +33,7 @@ function handleGeolocationSuccess(position) {
             url: apiUrl,
             headers: {
                 "X-RapidAPI-Host": "adsbx-flight-sim-traffic.p.rapidapi.com",
-                "X-RapidAPI-Key": "f77c4b15acmsh1c684ea25336b4ep1a6eaejsn6e0b1d02dcf3"
+                "X-RapidAPI-Key": ""
             }
         }).done(function (data) {
             localStorage.setItem("cache", JSON.stringify(data));
@@ -41,9 +44,27 @@ function handleGeolocationSuccess(position) {
 }
 
 function displayAircraftData(data, browserLat, browserLon) {
+    
+        // Read the CSV file
+        fs.readFile("assets/icaoplanes.csv", "utf8", function (err, contents) {
+        if (err) {
+            console.error(err);
+            return;
+        }
+
+        // Parse the contents of the CSV file
+        csvParse(contents, { columns: true }, function (err, data) {
+            if (err) {
+                console.error(err);
+                return;
+            }
+
+
+    
     let result = "";
     let count = 0;
-
+        const fs = require("fs");
+        const csvParse = require("csv-parse");
     data.ac.forEach(function (aircraft) {
         if (count >= 3 || aircraft.alt < 1000) {
             return;
@@ -52,35 +73,40 @@ function displayAircraftData(data, browserLat, browserLon) {
         const aircraftLat = aircraft.lat;
         const aircraftLon = aircraft.lon;
 
+
+
         //Calculate the direction based on the angle
         const direction = (180 + Math.atan2(aircraftLat - browserLat, aircraftLon - browserLon) * 180 / Math.PI) % 360;
         //Calculate the distance between the aircraft and the browser
         const distance = Math.sqrt(Math.pow(aircraftLat - browserLat, 2) + Math.pow(aircraftLon - browserLon, 2)) * 69.172;
 
-        result += `<div class='aircraft'>`
-        if (aircraft.from) {
-            let from = aircraft.from;
-            from = from.replace(" United States", "");
-            result += `From: ${from}<br>`
-        }
-        if (aircraft.to) {
-            let to = aircraft.to;
-            to = to.replace(" United States", "");
-            result += `To: ${to}<br>`
-        }
-        if (aircraft.call) {
-            result += `Call sign: ${aircraft.call}<br>`
-        }
-        if (aircraft.type) {
-            result += `Type: ${aircraft.type}<br>`
-        }
-        result += `Altitude: ${aircraft.alt}<br>`
-        result += `Distance: ${distance.toFixed(2)} miles ${getDirection(direction)}<br><br>
-        </div>`;
-        // Latitude: ${aircraft.lat}
-        // <br>Longitude: ${aircraft.lon}
-    count++;
+         // Iterate over each row of data
+        data.forEach(function (row) {
+            if (row.type === aircraft.type) {
+                result += `<div class='aircraft'>`;
+                if (aircraft.from) {
+                    let from = aircraft.from;
+                    from = from.replace(" United States", "");
+                    result += `From: ${from}<br>`;
+                }
+                if (aircraft.to) {
+                    let to = aircraft.to;
+                    to = to.replace(" United States", "");
+                    result += `To: ${to}<br>`;
+                }
+                if (aircraft.call) {
+                    result += `Call sign: ${aircraft.call}<br>`;
+                }
+                result += `Type: <a href='${row.wiki}'>${row.name}</a><br>`;
+                result += `Altitude: ${aircraft.alt}<br>`;
+                result += `Distance: ${distance.toFixed(2)} miles ${getDirection(direction)}<br><br>
+                </div>`;
+            }
+        });
+    });
 });
+});
+
 
 //update the result in the DOM
 $("#result").html(result);
