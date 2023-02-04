@@ -30,7 +30,7 @@ function handleGeolocationSuccess(position) {
             url: apiUrl,
             headers: {
                 "X-RapidAPI-Host": "adsbx-flight-sim-traffic.p.rapidapi.com",
-                "X-RapidAPI-Key": "f77c4b15acmsh1c684ea25336b4ep1a6eaejsn6e0b1d02dcf3"
+                "X-RapidAPI-Key": ""
             }
         }).done(function (data) {
             localStorage.setItem("cache", JSON.stringify(data));
