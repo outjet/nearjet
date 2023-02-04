@@ -1,22 +1,25 @@
 body {
-    background-color: lightslategray;
+    background-color: #222;
+    color:white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .aircraft {
   display: flex;
   flex-direction: column;
-  border: 1px solid rgb(1, 108, 247);
+  border: 1px solid #BBCDE5;
   border-radius: 10px;
   padding: 10px;
   margin-bottom: 10px;
-  width: 250px;
-  font-family: 'Open Sans', sans-serif;
-  background-color: ivory;
+  width: 100%;
+  background-color: #1C5D99;
 }
 
 #result {
     margin: 20px;
-    font-family: Arial, sans-serif;
+    text-align: center;
 }
 
 #message {
@@ -26,3 +29,6 @@ body {
     color: gray;
 }
 
+strong {
+    display:inline !important;
+}

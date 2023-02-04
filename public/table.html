@@ -1,0 +1,1680 @@
+<script>
+    let table = document.getElementById("planes"); // tableId is the id of your table
+let rows = table.getElementsByTagName("td");
+
+let urls = [];
+
+for (let i = 0; i < rows.length; i++) {
+    let row = rows[i];
+    let links = row.getElementsByTagName("a");
+    for (let j = 0; j < links.length; j++) {
+        let link = links[j];
+        urls.push(link.href);
+    }
+}
+
+console.log(urls);
+
+</script>
+
+<table class="wikitable sortable jquery-tablesorter" id="planes" style="border: 1px solid darkgray;">
+    <caption>ICAO aircraft type designators
+    </caption>
+    <thead><tr>
+    <th scope="col" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">ICAO<br>code<sup id="cite_ref-ICAOcode_3-0" class="reference"><a href="#cite_note-ICAOcode-3">[3]</a></sup>
+    </th>
+    <th scope="col" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">IATA<br>type code
+    </th>
+    <th scope="col" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Model
+    </th></tr></thead><tbody>
+    <tr>
+    <td>A124</td>
+    <td>A4F</td>
+    <td><a href="/wiki/Antonov_An-124_Ruslan" title="Antonov An-124 Ruslan">Antonov An-124 Ruslan</a>
+    </td></tr>
+    <tr>
+    <td>A140</td>
+    <td>A40</td>
+    <td><a href="/wiki/Antonov_An-140" title="Antonov An-140">Antonov An-140</a>
+    </td></tr>
+    <tr>
+    <td>A148</td>
+    <td>A81</td>
+    <td><a href="/wiki/Antonov_An-148" title="Antonov An-148">Antonov An-148</a>
+    </td></tr>
+    <tr>
+    <td>A158</td>
+    <td>A58</td>
+    <td><a href="/wiki/Antonov_An-148#Variants" title="Antonov An-148">Antonov An-158</a>
+    </td></tr>
+    <tr>
+    <td>A19N</td>
+    <td>31N</td>
+    <td><a href="/wiki/Airbus_A319neo" class="mw-redirect" title="Airbus A319neo">Airbus A319neo</a>
+    </td></tr>
+    <tr>
+    <td>A20N</td>
+    <td>32N</td>
+    <td><a href="/wiki/Airbus_A320neo" class="mw-redirect" title="Airbus A320neo">Airbus A320neo</a>
+    </td></tr>
+    <tr>
+    <td>A21N</td>
+    <td>32Q</td>
+    <td><a href="/wiki/Airbus_A321neo" class="mw-redirect" title="Airbus A321neo">Airbus A321neo</a>
+    </td></tr>
+    <tr>
+    <td>A225</td>
+    <td>A5F</td>
+    <td><a href="/wiki/Antonov_An-225_Mriya" title="Antonov An-225 Mriya">Antonov An-225 Mriya</a>
+    </td></tr>
+    <tr>
+    <td>A306</td>
+    <td>AB6</td>
+    <td><a href="/wiki/Airbus_A300" title="Airbus A300">Airbus A300-600</a>
+    </td></tr>
+    <tr>
+    <td>A306</td>
+    <td>ABY</td>
+    <td>Airbus A300-600 Freighter<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup>
+    </td></tr>
+    <tr>
+    <td>A30B</td>
+    <td>AB4</td>
+    <td><a href="/wiki/Airbus_A300" title="Airbus A300">Airbus A300B2, A300B4, and A300C4</a>
+    </td></tr>
+    <tr>
+    <td>A310</td>
+    <td>312</td>
+    <td><a href="/wiki/Airbus_A310" title="Airbus A310">Airbus A310-200</a>
+    </td></tr>
+    <tr>
+    <td>A310</td>
+    <td>313</td>
+    <td><a href="/wiki/Airbus_A310" title="Airbus A310">Airbus A310-300</a>
+    </td></tr>
+    <tr>
+    <td>A318</td>
+    <td>318</td>
+    <td><a href="/wiki/Airbus_A318" title="Airbus A318">Airbus A318</a>
+    </td></tr>
+    <tr>
+    <td>A318</td>
+    <td>32C</td>
+    <td><a href="/wiki/Airbus_A318" title="Airbus A318">Airbus A318 (sharklets)</a>
+    </td></tr>
+    <tr>
+    <td>A319</td>
+    <td>319</td>
+    <td><a href="/wiki/Airbus_A319" title="Airbus A319">Airbus A319</a>
+    </td></tr>
+    <tr>
+    <td>A319</td>
+    <td>32D</td>
+    <td><a href="/wiki/Airbus_A319" title="Airbus A319">Airbus A319 (sharklets)</a>
+    </td></tr>
+    <tr>
+    <td>A320</td>
+    <td>320</td>
+    <td><a href="/wiki/Airbus_A320" class="mw-redirect" title="Airbus A320">Airbus A320</a>
+    </td></tr>
+    <tr>
+    <td>A320</td>
+    <td>32A</td>
+    <td><a href="/wiki/Airbus_A320" class="mw-redirect" title="Airbus A320">Airbus A320 (sharklets)</a>
+    </td></tr>
+    <tr>
+    <td>A321</td>
+    <td>321</td>
+    <td><a href="/wiki/Airbus_A321" title="Airbus A321">Airbus A321</a>
+    </td></tr>
+    <tr>
+    <td>A321</td>
+    <td>32B</td>
+    <td><a href="/wiki/Airbus_A321" title="Airbus A321">Airbus A321 (sharklets)</a>
+    </td></tr>
+    <tr>
+    <td>A332</td>
+    <td>332</td>
+    <td><a href="/wiki/Airbus_A330#Variants" title="Airbus A330">Airbus A330-200</a>
+    </td></tr>
+    <tr>
+    <td>A333</td>
+    <td>333</td>
+    <td><a href="/wiki/Airbus_A330" title="Airbus A330">Airbus A330-300</a>
+    </td></tr>
+    <tr>
+    <td>A332</td>
+    <td>33X</td>
+    <td><a href="/wiki/Airbus_A330#Variants" title="Airbus A330">Airbus A330-200 Freighter</a>
+    </td></tr>
+    <tr>
+    <td>A333</td>
+    <td>33Y</td>
+    <td><a href="/wiki/Airbus_A330" title="Airbus A330">Airbus A330-300 Freighter</a>
+    </td></tr>
+    <tr>
+    <td>A337</td>
+    <td><sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:What_Wikipedia_is_not#Wikipedia_is_not_a_crystal_ball" title="Wikipedia:What Wikipedia is not"><span title="A number, date or other piece of information needs to be added.">to be determined</span></a></i>]</sup></td>
+    <td><a href="/wiki/Airbus_BelugaXL" title="Airbus BelugaXL">Airbus A330-700 "BelugaXL"</a>
+    </td></tr>
+    <tr>
+    <td>A338</td>
+    <td>338</td>
+    <td><a href="/wiki/Airbus_A330neo" title="Airbus A330neo">Airbus A330-800</a>
+    </td></tr>
+    <tr>
+    <td>A339</td>
+    <td>339</td>
+    <td><a href="/wiki/Airbus_A330neo" title="Airbus A330neo">Airbus A330-900</a>
+    </td></tr>
+    <tr>
+    <td>A342</td>
+    <td>342</td>
+    <td><a href="/wiki/Airbus_A340" title="Airbus A340">Airbus A340-200</a>
+    </td></tr>
+    <tr>
+    <td>A343</td>
+    <td>343</td>
+    <td><a href="/wiki/Airbus_A340" title="Airbus A340">Airbus A340-300</a>
+    </td></tr>
+    <tr>
+    <td>A345</td>
+    <td>345</td>
+    <td><a href="/wiki/Airbus_A340" title="Airbus A340">Airbus A340-500</a>
+    </td></tr>
+    <tr>
+    <td>A346</td>
+    <td>346</td>
+    <td><a href="/wiki/Airbus_A340" title="Airbus A340">Airbus A340-600</a>
+    </td></tr>
+    <tr>
+    <td>A359</td>
+    <td>359</td>
+    <td><a href="/wiki/Airbus_A350" title="Airbus A350">Airbus A350-900</a>
+    </td></tr>
+    <tr>
+    <td>A35K</td>
+    <td>351</td>
+    <td><a href="/wiki/Airbus_A350" title="Airbus A350">Airbus A350-1000</a>
+    </td></tr>
+    <tr>
+    <td>A388</td>
+    <td>388</td>
+    <td><a href="/wiki/Airbus_A380" title="Airbus A380">Airbus A380-800</a>
+    </td></tr>
+    <tr>
+    <td>A3ST</td>
+    <td>ABB</td>
+    <td><a href="/wiki/Airbus_Beluga" title="Airbus Beluga">Airbus A300-600ST "Super Transporter" / "Beluga"</a>
+    </td></tr>
+    <tr>
+    <td>A400</td>
+    <td></td>
+    <td><a href="/wiki/Airbus_A400M_Atlas" title="Airbus A400M Atlas">Airbus A400M Atlas</a>
+    </td></tr>
+    <tr>
+    <td>A748</td>
+    <td>HS7</td>
+    <td><a href="/wiki/Hawker_Siddeley_HS_748" title="Hawker Siddeley HS 748">Hawker Siddeley HS 748</a>
+    </td></tr>
+    <tr>
+    <td>AC68</td>
+    <td>ACP</td>
+    <td><a href="/wiki/Aero_Commander" title="Aero Commander">Gulfstream/Rockwell (Aero) Commander 680</a>
+    </td></tr>
+    <tr>
+    <td>AC90</td>
+    <td>ACT</td>
+    <td><a href="/wiki/Aero_Commander" title="Aero Commander">Gulfstream/Rockwell (Aero) Turbo Commander 690</a>
+    </td></tr>
+    <tr>
+    <td>AJ27</td>
+    <td>C27</td>
+    <td><a href="/wiki/COMAC_ARJ21" class="mw-redirect" title="COMAC ARJ21">COMAC ARJ21</a>
+    </td></tr>
+    <tr>
+    <td>AN12</td>
+    <td>ANF</td>
+    <td><a href="/wiki/Antonov_An-12" title="Antonov An-12">Antonov An-12</a>
+    </td></tr>
+    <tr>
+    <td>AN24</td>
+    <td>AN4</td>
+    <td><a href="/wiki/Antonov_An-24" title="Antonov An-24">Antonov An-24</a>
+    </td></tr>
+    <tr>
+    <td>AN26</td>
+    <td>A26</td>
+    <td><a href="/wiki/Antonov_An-26" title="Antonov An-26">Antonov An-26</a>
+    </td></tr>
+    <tr>
+    <td>AN28</td>
+    <td>A28</td>
+    <td><a href="/wiki/Antonov_An-28" title="Antonov An-28">Antonov An-28</a>
+    </td></tr>
+    <tr>
+    <td>AN30</td>
+    <td>A30</td>
+    <td><a href="/wiki/Antonov_An-30" title="Antonov An-30">Antonov An-30</a>
+    </td></tr>
+    <tr>
+    <td>AN32</td>
+    <td>A32</td>
+    <td><a href="/wiki/Antonov_An-32" title="Antonov An-32">Antonov An-32</a>
+    </td></tr>
+    <tr>
+    <td>AN72</td>
+    <td>AN7</td>
+    <td><a href="/wiki/Antonov_An-72" title="Antonov An-72">Antonov An-72 / An-74</a>
+    </td></tr>
+    <tr>
+    <td>AS32</td>
+    <td>APH</td>
+    <td><a href="/wiki/Eurocopter_AS332_Super_Puma" title="Eurocopter AS332 Super Puma">Eurocopter AS332 Super Puma</a>
+    </td></tr>
+    <tr>
+    <td>AS50</td>
+    <td>NDE</td>
+    <td><a href="/wiki/Eurocopter_AS350_%C3%89cureuil" title="Eurocopter AS350 Écureuil">Eurocopter AS350 Écureuil</a> / <a href="/wiki/Eurocopter_Fennec" title="Eurocopter Fennec">AS550 Fennec</a>
+    </td></tr>
+    <tr>
+    <td>AT43</td>
+    <td>AT4</td>
+    <td><a href="/wiki/ATR_42" title="ATR 42">Aerospatiale/Alenia ATR 42-300 / 320</a>
+    </td></tr>
+    <tr>
+    <td>AT45</td>
+    <td>AT5</td>
+    <td><a href="/wiki/ATR_42" title="ATR 42">Aerospatiale/Alenia ATR 42-500</a>
+    </td></tr>
+    <tr>
+    <td>AT46</td>
+    <td>ATR</td>
+    <td><a href="/wiki/ATR_42" title="ATR 42">Aerospatiale/Alenia ATR 42-600</a>
+    </td></tr>
+    <tr>
+    <td>AT72</td>
+    <td>AT7</td>
+    <td><a href="/wiki/ATR_72" title="ATR 72">Aerospatiale/Alenia ATR 72-201/-202</a>
+    </td></tr>
+    <tr>
+    <td>AT73</td>
+    <td>ATR</td>
+    <td><a href="/wiki/ATR_72" title="ATR 72">Aerospatiale/Alenia ATR 72-211/-212</a>
+    </td></tr>
+    <tr>
+    <td>AT75</td>
+    <td>ATR</td>
+    <td><a href="/wiki/ATR_72" title="ATR 72">Aerospatiale/Alenia ATR 72-212A (500)</a>
+    </td></tr>
+    <tr>
+    <td>AT76</td>
+    <td>ATR</td>
+    <td><a href="/wiki/ATR_72" title="ATR 72">Aerospatiale/Alenia ATR 72-212A (600)</a>
+    </td></tr>
+    <tr>
+    <td>ATP</td>
+    <td>ATP</td>
+    <td><a href="/wiki/British_Aerospace_ATP" title="British Aerospace ATP">British Aerospace ATP</a>
+    </td></tr>
+    <tr>
+    <td>B06</td>
+    <td></td>
+    <td><a href="/wiki/Bell_206" title="Bell 206">Bell 206</a> JetRanger
+    </td></tr>
+    <tr>
+    <td>B06T</td>
+    <td></td>
+    <td><a href="/wiki/Bell_206" title="Bell 206">Bell 206</a> TwinRanger
+    </td></tr>
+    <tr>
+    <td>B105</td>
+    <td>MBH</td>
+    <td><a href="/wiki/MBB_Bo_105" title="MBB Bo 105">Eurocopter (MBB) Bo.105</a>
+    </td></tr>
+    <tr>
+    <td>B190</td>
+    <td>BEH</td>
+    <td><a href="/wiki/Beechcraft_1900" title="Beechcraft 1900">Beechcraft 1900</a>
+    </td></tr>
+    <tr>
+    <td>B212</td>
+    <td>BH2</td>
+    <td><a href="/wiki/Bell_212" title="Bell 212">Bell 212</a>
+    </td></tr>
+    <tr>
+    <td>B37M</td>
+    <td>7M7</td>
+    <td><a href="/wiki/Boeing_737_MAX#737_MAX_7" title="Boeing 737 MAX">Boeing 737 MAX 7</a>
+    </td></tr>
+    <tr>
+    <td>B38M</td>
+    <td>7M8</td>
+    <td><a href="/wiki/Boeing_737_MAX#737_MAX_8" title="Boeing 737 MAX">Boeing 737 MAX 8</a>
+    </td></tr>
+    <tr>
+    <td>B39M</td>
+    <td>7M9</td>
+    <td><a href="/wiki/Boeing_737_MAX#737_MAX_9" title="Boeing 737 MAX">Boeing 737 MAX 9</a>
+    </td></tr>
+    <tr>
+    <td>B3XM</td>
+    <td>7MJ</td>
+    <td><a href="/wiki/Boeing_737_MAX#737_MAX_10" title="Boeing 737 MAX">Boeing 737 MAX 10</a>
+    </td></tr>
+    <tr>
+    <td>B412</td>
+    <td>BH2</td>
+    <td><a href="/wiki/Bell_412" title="Bell 412">Bell 412</a>
+    </td></tr>
+    <tr>
+    <td>B429</td>
+    <td>BH2</td>
+    <td><a href="/wiki/Bell_429" class="mw-redirect" title="Bell 429">Bell 429</a>
+    </td></tr>
+    <tr>
+    <td>B461</td>
+    <td>141</td>
+    <td><a href="/wiki/British_Aerospace_146" title="British Aerospace 146">BAe 146-100 / Avro RJ70</a>
+    </td></tr>
+    <tr>
+    <td>B462</td>
+    <td>142</td>
+    <td><a href="/wiki/British_Aerospace_146" title="British Aerospace 146">BAe 146-200 / Avro RJ85</a>
+    </td></tr>
+    <tr>
+    <td>B463</td>
+    <td>143</td>
+    <td><a href="/wiki/British_Aerospace_146" title="British Aerospace 146">BAe 146-300 / Avro RJ100</a>
+    </td></tr>
+    <tr>
+    <td>B52
+    </td>
+    <td>N/A
+    </td>
+    <td><a href="/wiki/Boeing_B-52_Stratofortress" title="Boeing B-52 Stratofortress">Boeing B-52 Stratofortress</a>
+    </td></tr>
+    <tr>
+    <td>B703</td>
+    <td>703</td>
+    <td><a href="/wiki/Boeing_707" title="Boeing 707">Boeing 707</a>
+    </td></tr>
+    <tr>
+    <td>B712</td>
+    <td>717</td>
+    <td><a href="/wiki/Boeing_717" title="Boeing 717">Boeing 717</a>
+    </td></tr>
+    <tr>
+    <td>B720</td>
+    <td>B72</td>
+    <td><a href="/wiki/Boeing_720" title="Boeing 720">Boeing 720B</a>
+    </td></tr>
+    <tr>
+    <td>B721</td>
+    <td>721</td>
+    <td><a href="/wiki/Boeing_727" title="Boeing 727">Boeing 727-100</a>
+    </td></tr>
+    <tr>
+    <td>B722</td>
+    <td>722</td>
+    <td><a href="/wiki/Boeing_727" title="Boeing 727">Boeing 727-200</a>
+    </td></tr>
+    <tr>
+    <td>B732</td>
+    <td>732</td>
+    <td><a href="/wiki/Boeing_737" title="Boeing 737">Boeing 737-200</a>
+    </td></tr>
+    <tr>
+    <td>B732</td>
+    <td>73F</td>
+    <td><a href="/wiki/Boeing_737_Classic" title="Boeing 737 Classic">Boeing 737-200 Freighter</a>
+    </td></tr>
+    <tr>
+    <td>B733</td>
+    <td>733</td>
+    <td><a href="/wiki/Boeing_737_Classic" title="Boeing 737 Classic">Boeing 737-300</a>
+    </td></tr>
+    <tr>
+    <td>B733</td>
+    <td>73C</td>
+    <td><a href="/wiki/Boeing_737_Classic" title="Boeing 737 Classic">Boeing 737-300 Winglets</a>
+    </td></tr>
+    <tr>
+    <td>B733</td>
+    <td>73Y</td>
+    <td><a href="/wiki/Boeing_737_Classic" title="Boeing 737 Classic">Boeing 737-300 Freighter</a>
+    </td></tr>
+    <tr>
+    <td>B734</td>
+    <td>734</td>
+    <td><a href="/wiki/Boeing_737_Classic" title="Boeing 737 Classic">Boeing 737-400</a>
+    </td></tr>
+    <tr>
+    <td>B734</td>
+    <td>73P</td>
+    <td><a href="/wiki/Boeing_737_Classic" title="Boeing 737 Classic">Boeing 737-400 Freighter</a>
+    </td></tr>
+    <tr>
+    <td>B735</td>
+    <td>735</td>
+    <td><a href="/wiki/Boeing_737_Classic" title="Boeing 737 Classic">Boeing 737-500</a>
+    </td></tr>
+    <tr>
+    <td>B735</td>
+    <td>73E</td>
+    <td><a href="/wiki/Boeing_737_Classic" title="Boeing 737 Classic">Boeing 737-500 Winglets</a>
+    </td></tr>
+    <tr>
+    <td>B736</td>
+    <td>736</td>
+    <td><a href="/wiki/Boeing_737_Next_Generation" title="Boeing 737 Next Generation">Boeing 737-600</a>
+    </td></tr>
+    <tr>
+    <td>B738</td>
+    <td>738</td>
+    <td><a href="/wiki/Boeing_737_Next_Generation" title="Boeing 737 Next Generation">Boeing 737-800</a>
+    </td></tr>
+    <tr>
+    <td>B739</td>
+    <td>739</td>
+    <td><a href="/wiki/Boeing_737_Next_Generation" title="Boeing 737 Next Generation">Boeing 737-900</a> / <a href="/wiki/Boeing_737_Next_Generation" title="Boeing 737 Next Generation">Boeing 737-900ER</a>
+    </td></tr>
+    <tr>
+    <td>B737</td>
+    <td>73G</td>
+    <td><a href="/wiki/Boeing_737_Next_Generation" title="Boeing 737 Next Generation">Boeing 737-700</a> / <a href="/wiki/Boeing_737_Next_Generation" title="Boeing 737 Next Generation">Boeing 737-700ER</a>
+    </td></tr>
+    <tr>
+    <td>B737</td>
+    <td>73W</td>
+    <td><a href="/wiki/Boeing_737_Next_Generation" title="Boeing 737 Next Generation">Boeing 737-700 Winglets</a>
+    </td></tr>
+    <tr>
+    <td>B738</td>
+    <td>73H</td>
+    <td><a href="/wiki/Boeing_737_Next_Generation" title="Boeing 737 Next Generation">Boeing 737-800 Winglets</a>
+    </td></tr>
+    <tr>
+    <td>B738</td>
+    <td>73K</td>
+    <td><a href="/wiki/Boeing_737_Next_Generation" title="Boeing 737 Next Generation">Boeing 737-800 Freighter Winglets</a>
+    </td></tr>
+    <tr>
+    <td>B738</td>
+    <td>73U</td>
+    <td><a href="/wiki/Boeing_737_Next_Generation" title="Boeing 737 Next Generation">Boeing 737-800 Freighter</a>
+    </td></tr>
+    <tr>
+    <td>B739</td>
+    <td>73J</td>
+    <td><a href="/wiki/Boeing_737_Next_Generation" title="Boeing 737 Next Generation">Boeing 737-900 Winglets</a>
+    </td></tr>
+    <tr>
+    <td>B741</td>
+    <td>741</td>
+    <td><a href="/wiki/Boeing_747" title="Boeing 747">Boeing 747-100</a>
+    </td></tr>
+    <tr>
+    <td>B741</td>
+    <td>74T</td>
+    <td><a href="/wiki/Boeing_747" title="Boeing 747">Boeing 747-100 Freighter</a>
+    </td></tr>
+    <tr>
+    <td>B742</td>
+    <td>742</td>
+    <td><a href="/wiki/Boeing_747" title="Boeing 747">Boeing 747-200</a>
+    </td></tr>
+    <tr>
+    <td>B742</td>
+    <td>74C</td>
+    <td><a href="/wiki/Boeing_747" title="Boeing 747">Boeing 747-200M</a>
+    </td></tr>
+    <tr>
+    <td>B742</td>
+    <td>74X</td>
+    <td><a href="/wiki/Boeing_747" title="Boeing 747">Boeing 747-200F</a>
+    </td></tr>
+    <tr>
+    <td>B743</td>
+    <td>743</td>
+    <td><a href="/wiki/Boeing_747" title="Boeing 747">Boeing 747-300</a>
+    </td></tr>
+    <tr>
+    <td>B743</td>
+    <td>74D</td>
+    <td><a href="/wiki/Boeing_747" title="Boeing 747">Boeing 747-300M</a>
+    </td></tr>
+    <tr>
+    <td>B744</td>
+    <td>744</td>
+    <td><a href="/wiki/Boeing_747-400" title="Boeing 747-400">Boeing 747-400</a> / <a href="/wiki/Boeing_747-400" title="Boeing 747-400">Boeing 747-400ER</a>
+    </td></tr>
+    <tr>
+    <td>B744</td>
+    <td>74E</td>
+    <td><a href="/wiki/Boeing_747-400" title="Boeing 747-400">Boeing 747-400M</a>
+    </td></tr>
+    <tr>
+    <td>B744</td>
+    <td>74Y</td>
+    <td><a href="/wiki/Boeing_747-400" title="Boeing 747-400">Boeing 747-400F</a> / <a href="/wiki/Boeing_747-400" title="Boeing 747-400">Boeing 747-400ERF</a>
+    </td></tr>
+    <tr>
+    <td>B748</td>
+    <td>74H</td>
+    <td><a href="/wiki/Boeing_747-8" title="Boeing 747-8">Boeing 747-8I</a>
+    </td></tr>
+    <tr>
+    <td>B748</td>
+    <td>74N</td>
+    <td><a href="/wiki/Boeing_747-8" title="Boeing 747-8">Boeing 747-8F</a>
+    </td></tr>
+    <tr>
+    <td>B74R</td>
+    <td>74R</td>
+    <td><a href="/wiki/Boeing_747" title="Boeing 747">Boeing 747SR</a>
+    </td></tr>
+    <tr>
+    <td>B74R</td>
+    <td>74V</td>
+    <td><a href="/wiki/Boeing_747" title="Boeing 747">Boeing 747SR Freighter</a>
+    </td></tr>
+    <tr>
+    <td>B74S</td>
+    <td>74L</td>
+    <td><a href="/wiki/Boeing_747SP" title="Boeing 747SP">Boeing 747SP</a>
+    </td></tr>
+    <tr>
+    <td>B752</td>
+    <td>752</td>
+    <td><a href="/wiki/Boeing_757" title="Boeing 757">Boeing 757-200</a>
+    </td></tr>
+    <tr>
+    <td>B752</td>
+    <td>75F</td>
+    <td><a href="/wiki/Boeing_757" title="Boeing 757">Boeing 757F</a>
+    </td></tr>
+    <tr>
+    <td>B753</td>
+    <td>753</td>
+    <td><a href="/wiki/Boeing_757" title="Boeing 757">Boeing 757-300</a>
+    </td></tr>
+    <tr>
+    <td>B762</td>
+    <td>762</td>
+    <td><a href="/wiki/Boeing_767" title="Boeing 767">Boeing 767-200</a> / <a href="/wiki/Boeing_767" title="Boeing 767">Boeing 767-200ER</a>
+    </td></tr>
+    <tr>
+    <td>B762</td>
+    <td>76X</td>
+    <td><a href="/wiki/Boeing_767" title="Boeing 767">Boeing 767-200 Freighter</a> / <a href="/wiki/Boeing_767" title="Boeing 767">Boeing 767-200ER</a>
+    </td></tr>
+    <tr>
+    <td>B763</td>
+    <td>763</td>
+    <td><a href="/wiki/Boeing_767" title="Boeing 767">Boeing 767-300</a>
+    </td></tr>
+    <tr>
+    <td>B763</td>
+    <td>76W</td>
+    <td><a href="/wiki/Boeing_767" title="Boeing 767">Boeing 767-300 Winglets</a> / <a href="/wiki/Boeing_767" title="Boeing 767">Boeing 767-300ER</a>
+    </td></tr>
+    <tr>
+    <td>B763</td>
+    <td>76Y</td>
+    <td><a href="/wiki/Boeing_767" title="Boeing 767">Boeing 767-300 Freighter</a>
+    </td></tr>
+    <tr>
+    <td>B764</td>
+    <td>764</td>
+    <td><a href="/wiki/Boeing_767" title="Boeing 767">Boeing 767-400ER</a>
+    </td></tr>
+    <tr>
+    <td>B772</td>
+    <td>772</td>
+    <td><a href="/wiki/Boeing_777" title="Boeing 777">Boeing 777-200</a> / <a href="/wiki/Boeing_777" title="Boeing 777">Boeing 777-200ER</a>
+    </td></tr>
+    <tr>
+    <td>B773</td>
+    <td>773</td>
+    <td><a href="/wiki/Boeing_777" title="Boeing 777">Boeing 777-300</a>
+    </td></tr>
+    <tr>
+    <td>B778</td>
+    <td>778</td>
+    <td><a href="/wiki/Boeing_777X#777-8" title="Boeing 777X">Boeing 777-8</a>
+    </td></tr>
+    <tr>
+    <td>B779</td>
+    <td>779</td>
+    <td><a href="/wiki/Boeing_777X#777-9" title="Boeing 777X">Boeing 777-9</a>
+    </td></tr>
+    <tr>
+    <td>B77L</td>
+    <td>77X</td>
+    <td><a href="/wiki/Boeing_777#777_Freighter" title="Boeing 777">Boeing 777-200 Freighter</a>
+    </td></tr>
+    <tr>
+    <td>B77L</td>
+    <td>77L</td>
+    <td><a href="/wiki/Boeing_777#777-200LR" title="Boeing 777">Boeing 777-200LR</a>
+    </td></tr>
+    <tr>
+    <td>B77W</td>
+    <td>77W</td>
+    <td><a href="/wiki/Boeing_777#777-300ER" title="Boeing 777">Boeing 777-300ER</a>
+    </td></tr>
+    <tr>
+    <td>B788</td>
+    <td>788</td>
+    <td><a href="/wiki/Boeing_787_Dreamliner#787-8" title="Boeing 787 Dreamliner">Boeing 787-8</a>
+    </td></tr>
+    <tr>
+    <td>B789</td>
+    <td>789</td>
+    <td><a href="/wiki/Boeing_787_Dreamliner#787-9" title="Boeing 787 Dreamliner">Boeing 787-9</a>
+    </td></tr>
+    <tr>
+    <td>B78X</td>
+    <td>781</td>
+    <td><a href="/wiki/Boeing_787_Dreamliner#787-10" title="Boeing 787 Dreamliner">Boeing 787-10</a>
+    </td></tr>
+    <tr>
+    <td>BA11</td>
+    <td>B11</td>
+    <td><a href="/wiki/BAC_One-Eleven" title="BAC One-Eleven">British Aerospace (BAC) One Eleven</a>
+    </td></tr>
+    <tr>
+    <td>BCS1</td>
+    <td>221</td>
+    <td><a href="/wiki/Airbus_A220" title="Airbus A220">Airbus A220-100</a>
+    </td></tr>
+    <tr>
+    <td>BCS3</td>
+    <td>223</td>
+    <td><a href="/wiki/Airbus_A220" title="Airbus A220">Airbus A220-300</a>
+    </td></tr>
+    <tr>
+    <td>BE40</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Hawker_400" title="Hawker 400">Hawker 400</a>
+    </td></tr>
+    <tr>
+    <td>BE55</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Beechcraft_Baron" title="Beechcraft Baron">Beechcraft 55 Baron</a>
+    </td></tr>
+    <tr>
+    <td>BE58</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Beechcraft_Baron" title="Beechcraft Baron">Beechcraft 58 Baron</a>
+    </td></tr>
+    <tr>
+    <td>BE76</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Beechcraft_Model_76_Duchess" class="mw-redirect" title="Beechcraft Model 76 Duchess">Beechcraft Model 76 Duchess</a>
+    </td></tr>
+    <tr>
+    <td>BE99</td>
+    <td></td>
+    <td><a href="/wiki/Beechcraft_Model_99" title="Beechcraft Model 99">Beechcraft Model 99</a>
+    </td></tr>
+    <tr>
+    <td>BELF</td>
+    <td>SHB</td>
+    <td><a href="/wiki/Short_Belfast" title="Short Belfast">Shorts SC-5 Belfast</a>
+    </td></tr>
+    <tr>
+    <td>BER2</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Beriev_Be-200" title="Beriev Be-200">Beriev Be-200 Altair</a>
+    </td></tr>
+    <tr>
+    <td>BLCF</td>
+    <td>74B</td>
+    <td><a href="/wiki/Boeing_Dreamlifter" title="Boeing Dreamlifter">Boeing 747 LCF Dreamlifter</a>
+    </td></tr>
+    <tr>
+    <td>BN2P</td>
+    <td>BNI</td>
+    <td><a href="/wiki/Britten-Norman_Islander" class="mw-redirect" title="Britten-Norman Islander">Pilatus Britten-Norman BN-2A/B Islander</a>
+    </td></tr>
+    <tr>
+    <td>C130</td>
+    <td>LOH</td>
+    <td><a href="/wiki/Lockheed_L-100_Hercules" title="Lockheed L-100 Hercules">Lockheed L-182 / 282 / 382 (L-100) Hercules</a>
+    </td></tr>
+    <tr>
+    <td>C208</td>
+    <td>CN1</td>
+    <td><a href="/wiki/Cessna_208_Caravan" title="Cessna 208 Caravan">Cessna 208 Caravan</a>
+    </td></tr>
+    <tr>
+    <td>C212</td>
+    <td>CS2</td>
+    <td><a href="/wiki/CASA_C-212_Aviocar" title="CASA C-212 Aviocar">CASA / IPTN 212 Aviocar</a>
+    </td></tr>
+    <tr>
+    <td>C25A</td>
+    <td>CNJ</td>
+    <td><a href="/wiki/Cessna_CitationJet" class="mw-redirect" title="Cessna CitationJet">Cessna Citation CJ2</a>
+    </td></tr>
+    <tr>
+    <td>C25B</td>
+    <td>CNJ</td>
+    <td><a href="/wiki/Cessna_CitationJet" class="mw-redirect" title="Cessna CitationJet">Cessna Citation CJ3</a>
+    </td></tr>
+    <tr>
+    <td>C25C</td>
+    <td>CNJ</td>
+    <td><a href="/wiki/Cessna_CitationJet" class="mw-redirect" title="Cessna CitationJet">Cessna Citation CJ4</a>
+    </td></tr>
+    <tr>
+    <td>C30J</td>
+    <td>LOH</td>
+    <td><a href="/wiki/Lockheed_Martin_C-130J_Hercules" class="mw-redirect" title="Lockheed Martin C-130J Hercules">Lockheed Martin C-130J Hercules</a>
+    </td></tr>
+    <tr>
+    <td>C310</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Cessna_310" title="Cessna 310">Cessna 310</a>
+    </td></tr>
+    <tr>
+    <td>C46</td>
+    <td>CWC</td>
+    <td><a href="/wiki/Curtiss-Wright_C-46_Commando" class="mw-redirect" title="Curtiss-Wright C-46 Commando">Curtiss C-46 Commando</a>
+    </td></tr>
+    <tr>
+    <td>C5M
+    </td>
+    <td>N/A
+    </td>
+    <td><a href="/wiki/Lockheed_C-5_Galaxy" title="Lockheed C-5 Galaxy">Lockheed C-5M Super Galaxy</a>
+    </td></tr>
+    <tr>
+    <td>C500</td>
+    <td>CNJ</td>
+    <td><a href="/wiki/Cessna_Citation_I" title="Cessna Citation I">Cessna Citation I</a>
+    </td></tr>
+    <tr>
+    <td>C510</td>
+    <td>CNJ</td>
+    <td><a href="/wiki/Cessna_Citation_Mustang" title="Cessna Citation Mustang">Cessna Citation Mustang</a>
+    </td></tr>
+    <tr>
+    <td>C525</td>
+    <td>CNJ</td>
+    <td><a href="/wiki/Cessna_CitationJet" class="mw-redirect" title="Cessna CitationJet">Cessna CitationJet</a>
+    </td></tr>
+    <tr>
+    <td>C550</td>
+    <td>CNJ</td>
+    <td><a href="/wiki/Cessna_Citation_II" title="Cessna Citation II">Cessna Citation II</a>
+    </td></tr>
+    <tr>
+    <td>C560</td>
+    <td>CNJ</td>
+    <td><a href="/wiki/Cessna_Citation_V" title="Cessna Citation V">Cessna Citation V</a>
+    </td></tr>
+    <tr>
+    <td>C56X</td>
+    <td>CNJ</td>
+    <td><a href="/wiki/Cessna_Citation_Excel" title="Cessna Citation Excel">Cessna Citation Excel</a>
+    </td></tr>
+    <tr>
+    <td>C650</td>
+    <td>CNJ</td>
+    <td><a href="/wiki/Cessna_Citation_III" title="Cessna Citation III">Cessna Citation III</a>, <a href="/wiki/Cessna_Citation_III" title="Cessna Citation III">VI</a>, <a href="/wiki/Cessna_Citation_VII" class="mw-redirect" title="Cessna Citation VII">VII</a>
+    </td></tr>
+    <tr>
+    <td>C680</td>
+    <td>CNJ</td>
+    <td><a href="/wiki/Cessna_Citation_Sovereign" title="Cessna Citation Sovereign">Cessna Citation Sovereign</a>
+    </td></tr>
+    <tr>
+    <td>C700</td>
+    <td>CNJ</td>
+    <td><a href="/wiki/Cessna_Citation_Longitude" title="Cessna Citation Longitude">Cessna Citation Longitude</a>
+    </td></tr>
+    <tr>
+    <td>C750</td>
+    <td>CNJ</td>
+    <td><a href="/wiki/Cessna_Citation_X" title="Cessna Citation X">Cessna Citation X</a>
+    </td></tr>
+    <tr>
+    <td>C919</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/COMAC_C919" class="mw-redirect" title="COMAC C919">COMAC C919</a>
+    </td></tr>
+    <tr>
+    <td>CL2T</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Bombardier_415" class="mw-redirect" title="Bombardier 415">Bombardier 415</a>
+    </td></tr>
+    <tr>
+    <td>CL30</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Bombardier_Challenger_300" title="Bombardier Challenger 300">Bombardier BD-100 Challenger 300</a>
+    </td></tr>
+    <tr>
+    <td>CL60</td>
+    <td>CCJ</td>
+    <td><a href="/wiki/Bombardier_Challenger_600_series" title="Bombardier Challenger 600 series">Canadair Challenger 600</a>
+    </td></tr>
+    <tr>
+    <td>CN35</td>
+    <td>CS5</td>
+    <td><a href="/wiki/CASA/IPTN_CN-235" title="CASA/IPTN CN-235">CASA/IPTN CN-235</a>
+    </td></tr>
+    <tr>
+    <td>CONI</td>
+    <td>L49</td>
+    <td><a href="/wiki/Lockheed_L-1049_Super_Constellation" title="Lockheed L-1049 Super Constellation">Lockheed L-1049 Super Constellation</a>
+    </td></tr>
+    <tr>
+    <td>CRJ1</td>
+    <td>CR1</td>
+    <td><a href="/wiki/Bombardier_CRJ200" class="mw-redirect" title="Bombardier CRJ200">Canadair Regional Jet 100</a>
+    </td></tr>
+    <tr>
+    <td>CRJ2</td>
+    <td>CR2</td>
+    <td><a href="/wiki/Bombardier_CRJ200" class="mw-redirect" title="Bombardier CRJ200">Canadair Regional Jet 200</a>
+    </td></tr>
+    <tr>
+    <td>CRJ7</td>
+    <td>CR7</td>
+    <td><a href="/wiki/Bombardier_CRJ700_series" title="Bombardier CRJ700 series">Canadair Regional Jet 700 | Regional Jet 550</a>
+    </td></tr>
+    <tr>
+    <td>CRJ9</td>
+    <td>CR9</td>
+    <td><a href="/wiki/Bombardier_CRJ700_series#CRJ705" title="Bombardier CRJ700 series">Canadair Regional Jet 900</a>
+    </td></tr>
+    <tr>
+    <td>CRJX</td>
+    <td>CRK</td>
+    <td><a href="/wiki/Bombardier_CRJ700_series#CRJ1000" title="Bombardier CRJ700 series">Canadair Regional Jet 1000</a>
+    </td></tr>
+    <tr>
+    <td>CVLP</td>
+    <td>CV4</td>
+    <td><a href="/wiki/Convair_CV-240_family" title="Convair CV-240 family">Convair CV-240 &amp; -440</a>
+    </td></tr>
+    <tr>
+    <td>CVLT</td>
+    <td>CV5</td>
+    <td><a href="/wiki/Convair_CV-240_family" title="Convair CV-240 family">Convair CV-580, Convair CV-600, Convair CV-640</a>
+    </td></tr>
+    <tr>
+    <td>D228</td>
+    <td>D28</td>
+    <td><a href="/wiki/Dornier_228" title="Dornier 228">Dornier 228</a>
+    </td></tr>
+    <tr>
+    <td>D328</td>
+    <td>D38</td>
+    <td><a href="/wiki/Dornier_328" title="Dornier 328">Fairchild Dornier Do.328</a>
+    </td></tr>
+    <tr>
+    <td>DA42</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Diamond_DA42" class="mw-redirect" title="Diamond DA42">Diamond DA42</a>
+    </td></tr>
+    <tr>
+    <td>DA62</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Diamond_DA62" title="Diamond DA62">Diamond DA62</a>
+    </td></tr>
+    <tr>
+    <td>DC10</td>
+    <td>D11</td>
+    <td><a href="/wiki/Douglas_DC-10" class="mw-redirect" title="Douglas DC-10">Douglas DC-10-10 / -15 Passenger</a>
+    </td></tr>
+    <tr>
+    <td>DC10</td>
+    <td>D1C</td>
+    <td><a href="/wiki/Douglas_DC-10" class="mw-redirect" title="Douglas DC-10">Douglas DC-10-30 / -40 Passenger</a>
+    </td></tr>
+    <tr>
+    <td>DC10</td>
+    <td>D1M</td>
+    <td><a href="/wiki/Douglas_DC-10" class="mw-redirect" title="Douglas DC-10">Douglas DC-10-30 Combi</a>
+    </td></tr>
+    <tr>
+    <td>DC10</td>
+    <td>D1X</td>
+    <td><a href="/wiki/Douglas_DC-10" class="mw-redirect" title="Douglas DC-10">Douglas DC-10-10 Freighter</a>
+    </td></tr>
+    <tr>
+    <td>DC10</td>
+    <td>D1Y</td>
+    <td><a href="/wiki/Douglas_DC-10" class="mw-redirect" title="Douglas DC-10">Douglas DC-10-30 / -40 Freighter</a>
+    </td></tr>
+    <tr>
+    <td>DC3</td>
+    <td>D3F</td>
+    <td><a href="/wiki/Douglas_DC-3" title="Douglas DC-3">Douglas DC-3</a>
+    </td></tr>
+    <tr>
+    <td>DC6</td>
+    <td>D6F</td>
+    <td><a href="/wiki/Douglas_DC-6" title="Douglas DC-6">Douglas DC-6</a>
+    </td></tr>
+    <tr>
+    <td>DC85</td>
+    <td>D8T</td>
+    <td><a href="/wiki/Douglas_DC-8" title="Douglas DC-8"> Douglas DC-8-50</a>
+    </td></tr>
+    <tr>
+    <td>DC86</td>
+    <td>D8L</td>
+    <td><a href="/wiki/Douglas_DC-8" title="Douglas DC-8"> Douglas DC-8-62</a>
+    </td></tr>
+    <tr>
+    <td>DC87</td>
+    <td>D8Q</td>
+    <td><a href="/wiki/Douglas_DC-8" title="Douglas DC-8"> Douglas DC-8-72</a>
+    </td></tr>
+    <tr>
+    <td>DC91</td>
+    <td>D91</td>
+    <td><a href="/wiki/Douglas_DC-9" class="mw-redirect" title="Douglas DC-9"> Douglas DC-9-10</a>
+    </td></tr>
+    <tr>
+    <td>DC92</td>
+    <td>D92</td>
+    <td><a href="/wiki/Douglas_DC-9" class="mw-redirect" title="Douglas DC-9"> Douglas DC-9-20</a>
+    </td></tr>
+    <tr>
+    <td>DC93</td>
+    <td>D93</td>
+    <td><a href="/wiki/Douglas_DC-9" class="mw-redirect" title="Douglas DC-9"> Douglas DC-9-30</a>
+    </td></tr>
+    <tr>
+    <td>DC94</td>
+    <td>D94</td>
+    <td><a href="/wiki/Douglas_DC-9" class="mw-redirect" title="Douglas DC-9"> Douglas DC-9-40</a>
+    </td></tr>
+    <tr>
+    <td>DC95</td>
+    <td>D95</td>
+    <td><a href="/wiki/Douglas_DC-9" class="mw-redirect" title="Douglas DC-9"> Douglas DC-9-50</a>
+    </td></tr>
+    <tr>
+    <td>DH2T</td>
+    <td>DHR</td>
+    <td><a href="/wiki/De_Havilland_Canada_DHC-2_Beaver" title="De Havilland Canada DHC-2 Beaver">De Havilland Canada DHC-2 Turbo-Beaver</a>
+    </td></tr>
+    <tr>
+    <td>DH8A</td>
+    <td>DH1</td>
+    <td><a href="/wiki/Bombardier_Dash_8" class="mw-redirect" title="Bombardier Dash 8">De Havilland Canada DHC-8-100 Dash 8 / 8Q</a>
+    </td></tr>
+    <tr>
+    <td>DH8B</td>
+    <td>DH2</td>
+    <td><a href="/wiki/Bombardier_Dash_8" class="mw-redirect" title="Bombardier Dash 8">De Havilland Canada DHC-8-200 Dash 8 / 8Q</a>
+    </td></tr>
+    <tr>
+    <td>DH8C</td>
+    <td>DH3</td>
+    <td><a href="/wiki/Bombardier_Dash_8" class="mw-redirect" title="Bombardier Dash 8">De Havilland Canada DHC-8-300 Dash 8 / 8Q</a>
+    </td></tr>
+    <tr>
+    <td>DH8D</td>
+    <td>DH4</td>
+    <td><a href="/wiki/Bombardier_Dash_8" class="mw-redirect" title="Bombardier Dash 8">De Havilland Canada DHC-8-400 Dash 8Q</a>
+    </td></tr>
+    <tr>
+    <td>DHC4</td>
+    <td>DHC</td>
+    <td><a href="/wiki/De_Havilland_Canada_DHC-4_Caribou" title="De Havilland Canada DHC-4 Caribou">De Havilland Canada DHC-4 Caribou</a>
+    </td></tr>
+    <tr>
+    <td>DHC5</td>
+    <td>DHC</td>
+    <td><a href="/wiki/De_Havilland_Canada_DHC-5_Buffalo" title="De Havilland Canada DHC-5 Buffalo">De Havilland Canada DHC-5 Buffalo</a>
+    </td></tr>
+    <tr>
+    <td>DHC6</td>
+    <td>DHT</td>
+    <td><a href="/wiki/De_Havilland_Canada_DHC-6_Twin_Otter" title="De Havilland Canada DHC-6 Twin Otter">De Havilland Canada DHC-6 Twin Otter</a>
+    </td></tr>
+    <tr>
+    <td>DHC7</td>
+    <td>DH7</td>
+    <td><a href="/wiki/De_Havilland_Canada_DHC-7_Dash_7" class="mw-redirect" title="De Havilland Canada DHC-7 Dash 7">De Havilland Canada DHC-7 Dash 7</a>
+    </td></tr>
+    <tr>
+    <td>DOVE</td>
+    <td>DHD</td>
+    <td><a href="/wiki/De_Havilland_Dove" title="De Havilland Dove">De Havilland DH.104 Dove</a>
+    </td></tr>
+    <tr>
+    <td>E110</td>
+    <td>EMB</td>
+    <td><a href="/wiki/Embraer_EMB_110_Bandeirante" title="Embraer EMB 110 Bandeirante">Embraer EMB 110 Bandeirante</a>
+    </td></tr>
+    <tr>
+    <td>E120</td>
+    <td>EM2</td>
+    <td><a href="/wiki/Embraer_EMB_120_Brasilia" title="Embraer EMB 120 Brasilia">Embraer EMB 120 Brasilia</a>
+    </td></tr>
+    <tr>
+    <td>E135</td>
+    <td>ER3</td>
+    <td><a href="/wiki/Embraer_RJ135" class="mw-redirect" title="Embraer RJ135">Embraer RJ135</a>
+    </td></tr>
+    <tr>
+    <td>E135</td>
+    <td>ERD</td>
+    <td><a href="/wiki/Embraer_ERJ_145_family" class="mw-redirect" title="Embraer ERJ 145 family">Embraer RJ140</a>
+    </td></tr>
+    <tr>
+    <td>E145</td>
+    <td>ER4</td>
+    <td><a href="/wiki/Embraer_RJ145" class="mw-redirect" title="Embraer RJ145">Embraer RJ145</a>
+    </td></tr>
+    <tr>
+    <td>E170</td>
+    <td>E70</td>
+    <td><a href="/wiki/Embraer_170" class="mw-redirect" title="Embraer 170">Embraer 170</a>
+    </td></tr>
+    <tr>
+    <td>E190</td>
+    <td>E90</td>
+    <td><a href="/wiki/Embraer_190" class="mw-redirect" title="Embraer 190">Embraer 190</a> / <a href="/wiki/Embraer_Lineage_1000" title="Embraer Lineage 1000">Lineage 1000</a>
+    </td></tr>
+    <tr>
+    <td>E195</td>
+    <td>E95</td>
+    <td><a href="/wiki/Embraer_195" class="mw-redirect" title="Embraer 195">Embraer 195</a>
+    </td></tr>
+    <tr>
+    <td>E290</td>
+    <td>290</td>
+    <td><a href="/wiki/Embraer_E-Jet_E2_family" title="Embraer E-Jet E2 family">Embraer E190-E2</a>
+    </td></tr>
+    <tr>
+    <td>E295</td>
+    <td>295</td>
+    <td><a href="/wiki/Embraer_E-Jet_E2_family" title="Embraer E-Jet E2 family">Embraer E195-E2</a>
+    </td></tr>
+    <tr>
+    <td>E35L</td>
+    <td>ER3</td>
+    <td><a href="/wiki/Embraer_Legacy_600" title="Embraer Legacy 600">Embraer Legacy 600 / Legacy 650</a>
+    </td></tr>
+    <tr>
+    <td>E50P</td>
+    <td>EP1</td>
+    <td><a href="/wiki/Embraer_Phenom_100" title="Embraer Phenom 100">Embraer Phenom 100</a>
+    </td></tr>
+    <tr>
+    <td>E545</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Embraer_Legacy_450" class="mw-redirect" title="Embraer Legacy 450">Embraer Legacy 450 / Praetor 500</a>
+    </td></tr>
+    <tr>
+    <td>E550</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Embraer_Legacy_500" class="mw-redirect" title="Embraer Legacy 500">Embraer Legacy 500 / Praetor 600</a>
+    </td></tr>
+    <tr>
+    <td>E55P</td>
+    <td>EP3</td>
+    <td><a href="/wiki/Embraer_Phenom_300" title="Embraer Phenom 300">Embraer Phenom 300</a>
+    </td></tr>
+    <tr>
+    <td>E75L</td>
+    <td>E7W</td>
+    <td><a href="/wiki/Embraer_E-Jet_family" title="Embraer E-Jet family">Embraer 175 (long wing)</a>
+    </td></tr>
+    <tr>
+    <td>E75S</td>
+    <td>E75</td>
+    <td><a href="/wiki/Embraer_E-Jet_family" title="Embraer E-Jet family">Embraer 175 (short wing)</a>
+    </td></tr>
+    <tr>
+    <td>EA50</td>
+    <td></td>
+    <td><a href="/wiki/Eclipse_500" title="Eclipse 500">Eclipse 500</a>
+    </td></tr>
+    <tr>
+    <td>EC20</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Eurocopter_EC120_Colibri" title="Eurocopter EC120 Colibri">Eurocopter EC120 Colibri / Harbin HC120</a>
+    </td></tr>
+    <tr>
+    <td>EC25</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Eurocopter_EC225_Super_Puma" title="Eurocopter EC225 Super Puma">Eurocopter EC225 Super Puma</a>
+    </td></tr>
+    <tr>
+    <td>EC30</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Eurocopter_EC130" title="Eurocopter EC130">Eurocopter EC130</a>
+    </td></tr>
+    <tr>
+    <td>EC35</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Eurocopter_EC135" title="Eurocopter EC135">Eurocopter EC135</a> / <a href="/wiki/Eurocopter_EC635" title="Eurocopter EC635">EC635</a>
+    </td></tr>
+    <tr>
+    <td>EC45</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Eurocopter_EC145" title="Eurocopter EC145">Eurocopter EC145</a>
+    </td></tr>
+    <tr>
+    <td>EC55</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Eurocopter_EC155" title="Eurocopter EC155">Eurocopter EC155</a>
+    </td></tr>
+    <tr>
+    <td>EC75</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Eurocopter_EC175" class="mw-redirect" title="Eurocopter EC175">Eurocopter EC175</a>
+    </td></tr>
+    <tr>
+    <td>EXPL</td>
+    <td>MD9</td>
+    <td><a href="/wiki/MD_Helicopters_MD_Explorer" title="MD Helicopters MD Explorer">MD Helicopters MD900 Explorer</a>
+    </td></tr>
+    <tr>
+    <td>F100</td>
+    <td>100</td>
+    <td><a href="/wiki/Fokker_100" title="Fokker 100">Fokker 100</a>
+    </td></tr>
+    <tr>
+    <td>F27</td>
+    <td>F27</td>
+    <td><a href="/wiki/Fokker_F27_Friendship" title="Fokker F27 Friendship">Fokker F27 Friendship</a>
+    </td></tr>
+    <tr>
+    <td>F28</td>
+    <td>F21</td>
+    <td><a href="/wiki/Fokker_F28_Fellowship" title="Fokker F28 Fellowship">Fokker F28 Fellowship</a>
+    </td></tr>
+    <tr>
+    <td>F2TH</td>
+    <td>D20</td>
+    <td><a href="/wiki/Dassault_Falcon_2000" title="Dassault Falcon 2000">Dassault Falcon 2000</a>
+    </td></tr>
+    <tr>
+    <td>F406</td>
+    <td>CNT</td>
+    <td><a href="/wiki/Reims-Cessna_F406_Caravan_II" title="Reims-Cessna F406 Caravan II">Reims-Cessna F406 Caravan II</a>
+    </td></tr>
+    <tr>
+    <td>F50</td>
+    <td>F50</td>
+    <td><a href="/wiki/Fokker_50" title="Fokker 50">Fokker 50</a>
+    </td></tr>
+    <tr>
+    <td>F70</td>
+    <td>F70</td>
+    <td><a href="/wiki/Fokker_70" title="Fokker 70">Fokker 70</a>
+    </td></tr>
+    <tr>
+    <td>F900</td>
+    <td>DF9</td>
+    <td><a href="/wiki/Dassault_Falcon_900" title="Dassault Falcon 900">Dassault Falcon 900</a>
+    </td></tr>
+    <tr>
+    <td>FA50</td>
+    <td>DF3</td>
+    <td><a href="/wiki/Dassault_Falcon_50" title="Dassault Falcon 50">Dassault Falcon 50</a>
+    </td></tr>
+    <tr>
+    <td>FA7X</td>
+    <td>DF7</td>
+    <td><a href="/wiki/Dassault_Falcon_7X" title="Dassault Falcon 7X">Dassault Falcon 7X</a>
+    </td></tr>
+    <tr>
+    <td>G159</td>
+    <td>GRS</td>
+    <td><a href="/wiki/Gulfstream_I" class="mw-redirect" title="Gulfstream I">Gulfstream Aerospace G-159 Gulfstream I</a>
+    </td></tr>
+    <tr>
+    <td>G21</td>
+    <td>GRG</td>
+    <td><a href="/wiki/Grumman_G-21_Goose" title="Grumman G-21 Goose">Grumman G-21 Goose</a>
+    </td></tr>
+    <tr>
+    <td>G280</td>
+    <td>GR3</td>
+    <td><a href="/wiki/Gulfstream_G280" title="Gulfstream G280">Gulfstream G280</a>
+    </td></tr>
+    <tr>
+    <td>G73T</td>
+    <td>GRM</td>
+    <td><a href="/wiki/Grumman_G-73_Turbo_Mallard" class="mw-redirect" title="Grumman G-73 Turbo Mallard">Grumman G-73 Turbo Mallard</a>
+    </td></tr>
+    <tr>
+    <td>GL5T</td>
+    <td>CCX</td>
+    <td><a href="/wiki/Bombardier_Global_Express#Global_5000" title="Bombardier Global Express">Bombardier BD-700 Global 5000</a>
+    </td></tr>
+    <tr>
+    <td>GLEX</td>
+    <td>CCX</td>
+    <td><a href="/wiki/Bombardier_Global_Express" title="Bombardier Global Express">Bombardier Global Express</a> / <a href="/wiki/Raytheon_Sentinel" title="Raytheon Sentinel">Raytheon Sentinel</a>
+    </td></tr>
+    <tr>
+    <td>GLF4</td>
+    <td>GJ4</td>
+    <td><a href="/wiki/Gulfstream_IV" title="Gulfstream IV">Gulfstream IV</a>
+    </td></tr>
+    <tr>
+    <td>GLF5</td>
+    <td>GJ5</td>
+    <td><a href="/wiki/Gulfstream_V" title="Gulfstream V">Gulfstream V</a>
+    </td></tr>
+    <tr>
+    <td>GLF6</td>
+    <td>GJ6</td>
+    <td><a href="/wiki/Gulfstream_G650" class="mw-redirect" title="Gulfstream G650">Gulfstream G650</a>
+    </td></tr>
+    <tr>
+    <td>H25B</td>
+    <td>H25</td>
+    <td><a href="/wiki/British_Aerospace_125" title="British Aerospace 125">British Aerospace 125 series / Hawker/Raytheon 700/800/800XP/850/900</a>
+    </td></tr>
+    <tr>
+    <td>H25C</td>
+    <td>H25</td>
+    <td><a href="/wiki/British_Aerospace_125" title="British Aerospace 125">British Aerospace 125-1000 series / Hawker/Raytheon 1000</a>
+    </td></tr>
+    <tr>
+    <td>HDJT</td>
+    <td>HHJ</td>
+    <td><a href="/wiki/Honda_Jet" class="mw-redirect" title="Honda Jet">Honda HA-420</a>
+    </td></tr>
+    <tr>
+    <td>HERN</td>
+    <td>DHH</td>
+    <td><a href="/wiki/De_Havilland_DH.114_Heron" class="mw-redirect" title="De Havilland DH.114 Heron">De Havilland DH.114 Heron</a>
+    </td></tr>
+    <tr>
+    <td>I114</td>
+    <td>I14</td>
+    <td><a href="/wiki/Ilyushin_Il-114" title="Ilyushin Il-114">Ilyushin Il-114</a>
+    </td></tr>
+    <tr>
+    <td>IL18</td>
+    <td>IL8</td>
+    <td><a href="/wiki/Ilyushin_Il-18" title="Ilyushin Il-18">Ilyushin Il-18</a>
+    </td></tr>
+    <tr>
+    <td>IL62</td>
+    <td>IL6</td>
+    <td><a href="/wiki/Ilyushin_Il-62" title="Ilyushin Il-62">Ilyushin Il-62</a>
+    </td></tr>
+    <tr>
+    <td>IL76</td>
+    <td>IL7</td>
+    <td><a href="/wiki/Ilyushin_Il-76" title="Ilyushin Il-76">Ilyushin Il-76</a>
+    </td></tr>
+    <tr>
+    <td>IL86</td>
+    <td>ILW</td>
+    <td><a href="/wiki/Ilyushin_Il-86" title="Ilyushin Il-86">Ilyushin Il-86</a>
+    </td></tr>
+    <tr>
+    <td>IL96</td>
+    <td>I93</td>
+    <td><a href="/wiki/Ilyushin_Il-96" title="Ilyushin Il-96">Ilyushin Il-96</a>
+    </td></tr>
+    <tr>
+    <td>J328</td>
+    <td>FRJ</td>
+    <td><a href="/wiki/Fairchild_Dornier_328JET" title="Fairchild Dornier 328JET">Fairchild Dornier 328JET</a>
+    </td></tr>
+    <tr>
+    <td>JS31</td>
+    <td>J31</td>
+    <td><a href="/wiki/British_Aerospace_Jetstream_31" class="mw-redirect" title="British Aerospace Jetstream 31">British Aerospace Jetstream 31</a>
+    </td></tr>
+    <tr>
+    <td>JS32</td>
+    <td>J32</td>
+    <td><a href="/wiki/British_Aerospace_Jetstream_32" class="mw-redirect" title="British Aerospace Jetstream 32">British Aerospace Jetstream 32</a>
+    </td></tr>
+    <tr>
+    <td>JS41</td>
+    <td>J41</td>
+    <td><a href="/wiki/British_Aerospace_Jetstream_41" title="British Aerospace Jetstream 41">British Aerospace Jetstream 41</a>
+    </td></tr>
+    <tr>
+    <td>JU52</td>
+    <td>JU5</td>
+    <td><a href="/wiki/Junkers_Ju_52" title="Junkers Ju 52">Junkers Ju 52/3M</a>
+    </td></tr>
+    <tr>
+    <td>K35R
+    </td>
+    <td>K35
+    </td>
+    <td><a href="/wiki/Boeing_KC-135_Stratotanker" title="Boeing KC-135 Stratotanker">Boeing KC-135 Stratotanker</a>
+    </td></tr>
+    <tr>
+    <td>L101</td>
+    <td>L10</td>
+    <td><a href="/wiki/Lockheed_L-1011_Tristar" class="mw-redirect" title="Lockheed L-1011 Tristar">Lockheed L-1011 Tristar</a>
+    </td></tr>
+    <tr>
+    <td>L188</td>
+    <td>LOE</td>
+    <td><a href="/wiki/Lockheed_L-188_Electra" title="Lockheed L-188 Electra">Lockheed L-188 Electra</a>
+    </td></tr>
+    <tr>
+    <td>L410</td>
+    <td>L4T</td>
+    <td><a href="/wiki/LET_410" class="mw-redirect" title="LET 410">LET 410</a>
+    </td></tr>
+    <tr>
+    <td>LJ35</td>
+    <td>LRJ</td>
+    <td><a href="/wiki/Learjet_35" title="Learjet 35">Learjet 35 / 36 / C-21A</a>
+    </td></tr>
+    <tr>
+    <td>LJ60</td>
+    <td>LRJ</td>
+    <td><a href="/wiki/Learjet_60" title="Learjet 60">Learjet 60</a>
+    </td></tr>
+    <tr>
+    <td>MD11</td>
+    <td>M11</td>
+    <td><a href="/wiki/McDonnell_Douglas_MD-11" title="McDonnell Douglas MD-11">McDonnell Douglas MD-11</a>
+    </td></tr>
+    <tr>
+    <td>MD11</td>
+    <td>M1F</td>
+    <td><a href="/wiki/McDonnell_Douglas_MD-11" title="McDonnell Douglas MD-11">McDonnell Douglas MD-11F</a>
+    </td></tr>
+    <tr>
+    <td>MD11</td>
+    <td>M1M</td>
+    <td><a href="/wiki/McDonnell_Douglas_MD-11" title="McDonnell Douglas MD-11">McDonnell Douglas MD-11C</a>
+    </td></tr>
+    <tr>
+    <td>MD81</td>
+    <td>M81</td>
+    <td><a href="/wiki/McDonnell_Douglas_MD-81" class="mw-redirect" title="McDonnell Douglas MD-81">McDonnell Douglas MD-81</a>
+    </td></tr>
+    <tr>
+    <td>MD82</td>
+    <td>M82</td>
+    <td><a href="/wiki/McDonnell_Douglas_MD-82" class="mw-redirect" title="McDonnell Douglas MD-82">McDonnell Douglas MD-82</a>
+    </td></tr>
+    <tr>
+    <td>MD83</td>
+    <td>M83</td>
+    <td><a href="/wiki/McDonnell_Douglas_MD-83" class="mw-redirect" title="McDonnell Douglas MD-83">McDonnell Douglas MD-83</a>
+    </td></tr>
+    <tr>
+    <td>MD87</td>
+    <td>M87</td>
+    <td><a href="/wiki/McDonnell_Douglas_MD-87" class="mw-redirect" title="McDonnell Douglas MD-87">McDonnell Douglas MD-87</a>
+    </td></tr>
+    <tr>
+    <td>MD88</td>
+    <td>M88</td>
+    <td><a href="/wiki/McDonnell_Douglas_MD-88" class="mw-redirect" title="McDonnell Douglas MD-88">McDonnell Douglas MD-88</a>
+    </td></tr>
+    <tr>
+    <td>MD90</td>
+    <td>M90</td>
+    <td><a href="/wiki/McDonnell_Douglas_MD-90" title="McDonnell Douglas MD-90">McDonnell Douglas MD-90</a>
+    </td></tr>
+    <tr>
+    <td>MI24</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Mil_Mi-24" title="Mil Mi-24">Mil Mi-24 / Mi-25 / Mi-35</a>
+    </td></tr>
+    <tr>
+    <td>MI8</td>
+    <td>MIH</td>
+    <td><a href="/wiki/Mil_Mi-8" title="Mil Mi-8">MIL Mi-8</a> / <a href="/wiki/Mil_Mi-17" title="Mil Mi-17">Mi-17 / Mi-171 / Mil-172</a>
+    </td></tr>
+    <tr>
+    <td>MU2</td>
+    <td>MU2</td>
+    <td><a href="/wiki/Mitsubishi_Mu-2" class="mw-redirect" title="Mitsubishi Mu-2">Mitsubishi Mu-2</a>
+    </td></tr>
+    <tr>
+    <td>N262</td>
+    <td>ND2</td>
+    <td><a href="/wiki/A%C3%A9rospatiale_N_262" title="Aérospatiale N 262">Aerospatiale (Nord) 262</a>
+    </td></tr>
+    <tr>
+    <td>NOMA</td>
+    <td>CD2</td>
+    <td><a href="/wiki/GAF_Nomad" title="GAF Nomad">Government Aircraft Factories N22B / N24A Nomad</a>
+    </td></tr>
+    <tr>
+    <td>P06T</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Tecnam_P2006T" title="Tecnam P2006T">Tecnam P2006T</a>
+    </td></tr>
+    <tr>
+    <td>P8</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Boeing_P-8_Poseidon" title="Boeing P-8 Poseidon">Boeing P-8 Poseidon</a>
+    </td></tr>
+    <tr>
+    <td>P180</td>
+    <td>P18</td>
+    <td><a href="/wiki/Piaggio_P.180_Avanti" title="Piaggio P.180 Avanti">Piaggio P.180 Avanti</a>
+    </td></tr>
+    <tr>
+    <td>P212</td>
+    <td>T12</td>
+    <td><a href="/wiki/Tecnam_P2012_Traveller" title="Tecnam P2012 Traveller">Tecnam P2012 Traveller</a>
+    </td></tr>
+    <tr>
+    <td>P68</td>
+    <td>PN6</td>
+    <td><a href="/wiki/Partenavia_P.68" title="Partenavia P.68">Partenavia P.68</a>
+    </td></tr>
+    <tr>
+    <td>PA31</td>
+    <td>PA2</td>
+    <td><a href="/wiki/Piper_PA-31_Navajo" title="Piper PA-31 Navajo">Piper PA-31 Navajo</a>
+    </td></tr>
+    <tr>
+    <td>PA34</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Piper_PA-34_Seneca" title="Piper PA-34 Seneca">Piper PA-34 Seneca</a>
+    </td></tr>
+    <tr>
+    <td>PA44</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Piper_PA-44_Seminole" title="Piper PA-44 Seminole">Piper PA-44 Seminole</a>
+    </td></tr>
+    <tr>
+    <td>PC12</td>
+    <td>PL2</td>
+    <td><a href="/wiki/Pilatus_PC-12" title="Pilatus PC-12">Pilatus PC-12</a>
+    </td></tr>
+    <tr>
+    <td>PC6T</td>
+    <td>PL6</td>
+    <td><a href="/wiki/Pilatus_PC-6_Turbo_Porter" class="mw-redirect" title="Pilatus PC-6 Turbo Porter">Pilatus PC-6 Turbo Porter</a>
+    </td></tr>
+    <tr>
+    <td>PC24</td>
+    <td>PL4</td>
+    <td><a href="/wiki/Pilatus_PC-24" title="Pilatus PC-24">Pilatus PC-24</a>
+    </td></tr>
+    <tr>
+    <td>RJ1H</td>
+    <td>AR1</td>
+    <td><a href="/wiki/Avro_RJ100" class="mw-redirect" title="Avro RJ100">Avro RJ100</a>
+    </td></tr>
+    <tr>
+    <td>RJ70</td>
+    <td>AR7</td>
+    <td><a href="/wiki/Avro_RJ70" class="mw-redirect" title="Avro RJ70">Avro RJ70</a>
+    </td></tr>
+    <tr>
+    <td>RJ85</td>
+    <td>AR8</td>
+    <td><a href="/wiki/Avro_RJ85" class="mw-redirect" title="Avro RJ85">Avro RJ85</a>
+    </td></tr>
+    <tr>
+    <td>S58T</td>
+    <td>S58</td>
+    <td><a href="/wiki/Sikorsky_S-58" class="mw-redirect" title="Sikorsky S-58"> Sikorsky S-58T</a>
+    </td></tr>
+    <tr>
+    <td>S601</td>
+    <td>NDC</td>
+    <td><a href="/wiki/A%C3%A9rospatiale_Corvette" title="Aérospatiale Corvette">Aerospatiale SN.601 Corvette</a>
+    </td></tr>
+    <tr>
+    <td>S61</td>
+    <td>S61</td>
+    <td><a href="/wiki/Sikorsky_S-61" title="Sikorsky S-61">Sikorsky S-61</a>
+    </td></tr>
+    <tr>
+    <td>S65C</td>
+    <td>NDH</td>
+    <td><a href="/wiki/Eurocopter_Dauphin" class="mw-redirect" title="Eurocopter Dauphin">Eurocopter (Aerospatiale) SA365C Dauphin 2</a>
+    </td></tr>
+    <tr>
+    <td>S76</td>
+    <td>S76</td>
+    <td><a href="/wiki/Sikorsky_S-76" title="Sikorsky S-76">Sikorsky S-76</a>
+    </td></tr>
+    <tr>
+    <td>S92</td>
+    <td>S92</td>
+    <td><a href="/wiki/Sikorsky_S-92" title="Sikorsky S-92">Sikorsky S-92</a>
+    </td></tr>
+    <tr>
+    <td>SB20</td>
+    <td>S20</td>
+    <td><a href="/wiki/Saab_2000" title="Saab 2000">Saab 2000</a>
+    </td></tr>
+    <tr>
+    <td>SC7</td>
+    <td>SHS</td>
+    <td><a href="/wiki/Shorts_SC-7" class="mw-redirect" title="Shorts SC-7"> Shorts SC-7 Skyvan</a>
+    </td></tr>
+    <tr>
+    <td>SF34</td>
+    <td>SF3</td>
+    <td><a href="/wiki/Saab_SF340" class="mw-redirect" title="Saab SF340"> Saab SF340A/B</a>
+    </td></tr>
+    <tr>
+    <td>SF50</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Cirrus_Vision_SF50" title="Cirrus Vision SF50">Cirrus SF50 Vision Jet</a>
+    </td></tr>
+    <tr>
+    <td>SH33</td>
+    <td>SH3</td>
+    <td><a href="/wiki/Short_330" title="Short 330">Shorts SD.330</a>
+    </td></tr>
+    <tr>
+    <td>SH36</td>
+    <td>SH6</td>
+    <td><a href="/wiki/Short_360" title="Short 360">Shorts SD.360</a>
+    </td></tr>
+    <tr>
+    <td>SU95</td>
+    <td>SU9</td>
+    <td><a href="/wiki/Sukhoi_Superjet_100-95" class="mw-redirect" title="Sukhoi Superjet 100-95">Sukhoi Superjet 100-95</a>
+    </td></tr>
+    <tr>
+    <td>SW4</td>
+    <td>SW4</td>
+    <td><a href="/wiki/Fairchild_Swearingen_Metroliner" title="Fairchild Swearingen Metroliner">Fairchild Swearingen Metroliner</a>
+    </td></tr>
+    <tr>
+    <td>T134</td>
+    <td>TU3</td>
+    <td><a href="/wiki/Tupolev_Tu-134" title="Tupolev Tu-134">Tupolev Tu-134</a>
+    </td></tr>
+    <tr>
+    <td>T154</td>
+    <td>TU5</td>
+    <td><a href="/wiki/Tupolev_Tu-154" title="Tupolev Tu-154">Tupolev Tu-154</a>
+    </td></tr>
+    <tr>
+    <td>T204</td>
+    <td>T20</td>
+    <td><a href="/wiki/Tupolev_Tu-204" title="Tupolev Tu-204"> Tupolev Tu-204 / Tu-214</a>
+    </td></tr>
+    <tr>
+    <td>TBM7</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Daher_TBM" class="mw-redirect" title="Daher TBM"> Daher TBM 700</a>
+    </td></tr>
+    <tr>
+    <td>TBM8</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Daher_TBM" class="mw-redirect" title="Daher TBM"> Daher TBM 850</a>
+    </td></tr>
+    <tr>
+    <td>TBM9</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Daher_TBM" class="mw-redirect" title="Daher TBM"> Daher TBM 900</a>
+    </td></tr>
+    <tr>
+    <td>TBM9</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Daher_TBM" class="mw-redirect" title="Daher TBM"> Daher TBM 910</a>
+    </td></tr>
+    <tr>
+    <td>TBM9</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Daher_TBM" class="mw-redirect" title="Daher TBM"> Daher TBM 930</a>
+    </td></tr>
+    <tr>
+    <td>TBM9</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Daher_TBM" class="mw-redirect" title="Daher TBM"> Daher TBM 940</a>
+    </td></tr>
+    <tr>
+    <td>TBM9</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Daher_TBM" class="mw-redirect" title="Daher TBM"> Daher TBM 960</a>
+    </td></tr>
+    <tr>
+    <td>TRIS</td>
+    <td>BNT</td>
+    <td><a href="/wiki/Britten-Norman_Trislander" title="Britten-Norman Trislander">Pilatus Britten-Norman BN-2A Mk III Trislander</a>
+    </td></tr>
+    <tr>
+    <td>V22</td>
+    <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">—</td>
+    <td><a href="/wiki/Bell_Boeing_V-22_Osprey" title="Bell Boeing V-22 Osprey">Bell Boeing V-22 Osprey</a>
+    </td></tr>
+    <tr>
+    <td>WW24</td>
+    <td>WWP</td>
+    <td><a href="/wiki/IAI_Westwind" title="IAI Westwind">Israel Aircraft Industries 1124 Westwind</a>
+    </td></tr>
+    <tr>
+    <td>Y12</td>
+    <td>YN2</td>
+    <td><a href="/wiki/Harbin_Y-12" title="Harbin Y-12">Harbin Y-12</a>
+    </td></tr>
+    <tr>
+    <td>YK40</td>
+    <td>YK4</td>
+    <td><a href="/wiki/Yakovlev_Yak-40" title="Yakovlev Yak-40">Yakovlev Yak-40</a>
+    </td></tr>
+    <tr>
+    <td>YK42</td>
+    <td>YK2</td>
+    <td><a href="/wiki/Yakovlev_Yak-42" title="Yakovlev Yak-42">Yakovlev Yak-42</a>
+    </td></tr>
+    <tr>
+    <td>YS11</td>
+    <td>YS1</td>
+    <td><a href="/wiki/NAMC_YS-11" title="NAMC YS-11">NAMC YS-11</a>
+    </td></tr></tbody><tfoot></tfoot></table>

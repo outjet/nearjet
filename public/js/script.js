@@ -18,7 +18,7 @@ function handleGeolocationSuccess(position) {
     const cacheTimestamp = localStorage.getItem("timestamp");
 
     // Check if the cache is still valid (12 hours)
-    if (cache && cacheTimestamp && Date.now() - cacheTimestamp < 43200000) {
+    if (cache && cacheTimestamp && Date.now() - cacheTimestamp < 6333330) {
         const data = JSON.parse(cache);
         console.log('Data: ', data);
         console.log('Result: ', result);
@@ -30,7 +30,7 @@ function handleGeolocationSuccess(position) {
             url: apiUrl,
             headers: {
                 "X-RapidAPI-Host": "adsbx-flight-sim-traffic.p.rapidapi.com",
-                "X-RapidAPI-Key": ""
+                "X-RapidAPI-Key": "f77c4b15acmsh1c684ea25336b4ep1a6eaejsn6e0b1d02dcf3"
             }
         }).done(function (data) {
             localStorage.setItem("cache", JSON.stringify(data));
@@ -59,18 +59,22 @@ function displayAircraftData(data, browserLat, browserLon) {
 
         result += `<div class='aircraft'>`
         if (aircraft.from) {
-            result += `From: ${aircraft.from}<br>`
+            let from = aircraft.from;
+            from = from.replace(" United States", "");
+            result += `From: ${from}<br>`
         }
         if (aircraft.to) {
-            result += `To: ${aircraft.to}<br>`
+            let to = aircraft.to;
+            to = to.replace(" United States", "");
+            result += `To: ${to}<br>`
         }
-        result += `<br>Altitude: ${aircraft.alt}<br>`
         if (aircraft.call) {
             result += `Call sign: ${aircraft.call}<br>`
         }
         if (aircraft.type) {
             result += `Type: ${aircraft.type}<br>`
         }
+        result += `Altitude: ${aircraft.alt}<br>`
         result += `Distance: ${distance.toFixed(2)} miles ${getDirection(direction)}<br><br>
         </div>`;
         // Latitude: ${aircraft.lat}
