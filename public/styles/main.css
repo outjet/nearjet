@@ -6,6 +6,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+a {color:white;}
+a.visited {color:white;}
+
+
 .aircraft {
   display: flex;
   flex-direction: column;
@@ -20,6 +24,11 @@ body {
 #result {
     margin: 20px;
     text-align: center;
+}
+
+#findingyou {
+    text-align: center;
+    font-size: 4em;
 }
 
 #message {
