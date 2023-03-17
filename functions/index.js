@@ -47,3 +47,4 @@ exports.myFunction = functions.https.onRequest((req, res) => {
     res.status(500).json({ error: error });
   });
 });
+
